@@ -1,0 +1,46 @@
+.root {
+  display: flex;
+  width: 600px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.score {
+  text-align: center;
+  margin: 50px 0 50px 0;
+  font-size: 100px;
+}
+
+.root .item {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../images/하늘.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.root .item div {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 50% 50% 0 0;
+  transform: translateY(210px);
+}
+
+.root .item .on {
+  transform: translateY(0px);
+}
+
+.root .item div:nth-child(1) {
+  background-image: url("../images/두더지.png");
+}
+
+.root .item div:nth-child(2) {
+  background-image: url("../images/boom.png");
+}

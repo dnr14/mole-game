@@ -1,3 +1,14 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 600px;
+}
+
 .root {
   display: flex;
   width: 600px;
@@ -5,18 +16,23 @@
   flex-wrap: wrap;
 }
 
-.score {
+.score-wrapper {
   text-align: center;
-  margin: 50px 0 50px 0;
-  font-size: 100px;
+  margin: 15px 0;
+  font-size: 30px;
+}
+.time-wrapper {
+  font-size: 18px;
 }
 
 .root .item {
+  display: flex;
+  justify-content: center;
   width: 150px;
   height: 150px;
   position: relative;
   overflow: hidden;
-  background-image: url("../images/sky.jpg");
+  background-image: url("/images/floor.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -37,10 +53,11 @@
   transform: translateY(0px);
 }
 
-.root .item div:nth-child(1) {
-  background-image: url("../images/target.png");
+.root .item .mole {
+  background-image: url("/images/target.png");
+  width: 85%;
 }
 
-.root .item div:nth-child(2) {
-  background-image: url("../images/boom.png");
+.root .item .boom {
+  background-image: url("/images/boom.png");
 }

@@ -6,6 +6,12 @@
 - 60초안에 점수를 많이 획득한 유저가 승리한다.
 - [게임체험하기](https://dnr14.github.io/mole)
 
+### 구현 기술
+
+1.  HTML, CSS, JS
+
+> 👨‍💻 구현화면
+
 <div align=center>
   <img src=./images/mole.gif />
 </div>
